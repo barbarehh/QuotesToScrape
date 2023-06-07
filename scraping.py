@@ -46,7 +46,7 @@ else:
                 authors.append(author_next.text)
             next_page = soup.find("li", class_="next")
           
-        #checks if provided tag has information or not
+        #checks if the provided tag has information or not
         if not quotes and not authors:
             print(f"No quotes were found for the tag: {enter_tag}")
         else:
